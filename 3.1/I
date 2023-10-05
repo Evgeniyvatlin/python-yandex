@@ -1,0 +1,16 @@
+lst = []
+
+while True:
+    line = input()
+
+    if line == '':
+        break
+
+    lst.append(line)
+
+for s in lst:
+    if s[0] != '#':
+        if '#' in s:
+            print(s[:s.find('#')])
+        else:
+            print(s)
