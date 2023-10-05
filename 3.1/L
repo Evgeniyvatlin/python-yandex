@@ -1,0 +1,9 @@
+n = int(input())
+
+lst = [input() for s in range(n)]
+
+line = input()
+
+for s in lst:
+    if line.lower() in s.lower():
+        print(s)
