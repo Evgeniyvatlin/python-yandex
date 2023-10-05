@@ -1,0 +1,18 @@
+L = int(input())
+
+n = int(input())
+
+lst = []
+
+for _ in range(n):
+    lst.append(input())
+
+for i in range(n):
+    if len(lst[i]) <= L:
+        for a in lst[i]:
+            print(a, end='')
+    else:
+        for a in range(L - 3):
+            print(f"{lst[i][a]}", end='')
+        print('...', end='')
+    print()
