@@ -1,0 +1,10 @@
+line = 'зайка'
+n = int(input())
+
+lst = [input().split() for _ in range(n)]
+
+for i in range(n):
+    if line not in lst[i]:
+        print('Заек нет =(')
+    else:
+        print(' '.join(lst[i]).find(line) + 1)
